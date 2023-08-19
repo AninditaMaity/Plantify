@@ -1,0 +1,254 @@
+html{
+    font-family: 'Varela Round', sans-serif;
+    overflow-x: hidden;
+}
+/* nav */
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(226, 224, 224, 0.822);
+}
+.nav_left{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bullet{
+    background-color: black;
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    margin-top: 2px;
+    margin-right:10px;
+}
+.nav_right{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav_ele{
+    padding: 10px;
+}
+.nav_ele>h1{
+    font-weight: bold;
+}
+/* main */
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(226, 224, 224, 0.822);
+}
+.main_left{
+    width: 50%;
+}
+.main_right{
+    width: 50%;
+}
+.inner_content{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding:5%;
+    height: 100%;
+}
+.inner_content p{
+    margin:0px;
+}
+.bold p,h2{
+    font-weight: bold;
+    font-size:3em;
+    margin:0px;
+}
+.small_normal p{
+    font-size:2rem;
+}
+button{
+    text-align: center;
+    background-color: white;
+    border:2px solid black;
+    width:40%;
+    height:40px;
+    margin-top:5%;
+    margin-bottom: 5%;
+    
+}
+#main_button{
+    background-color: black;
+    color: white;
+    border:0px;
+}
+img{
+    width:100%;
+}
+
+/* sec1 */
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(248, 247, 240, 0.959);
+    height:100%;
+}
+.sec1_left{
+    width: 50%;
+}
+.sec1_right{
+    width: 50%;
+}
+.big_normal p{
+    font-size:3em;
+    margin: 0px;
+}
+.one_line_def{
+    display: flex;
+    align-items: center;
+}
+.before_def{
+    height:5px;
+    width:40px;
+    border-radius: 5px;
+    background-color: black;
+}
+/* sec2*/
+.sec2{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(238, 233, 233, 0.747);
+    height:100%;
+}
+.sec2_left{
+    width: 50%;
+}
+.sec2_right{
+    width: 50%;
+}
+/* sec3*/
+.sec3{
+    background-color:rgb(236, 239, 243);
+    height:50%;
+}
+/* sec4 */
+.sec4{
+    display: flex;
+}
+.sec_img{
+    width: 33.3%;
+    position: relative;
+}
+.sec_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:absolute;
+    height:100%;
+    padding:5px;
+}
+
+/* sec5 */
+.sec5{
+    display: flex;
+}
+.sec5_left{
+    width: 67.5%;
+    position: relative;
+}
+/* sec6 */
+.sec3{
+    background-color:rgb(236, 239, 243);
+    height:50%;
+}
+footer{
+    text-align: center;
+    margin:100px;
+    color: rgba(143, 142, 142, 0.89);
+    font-weight: 700;
+    font-size: x-large;
+}
+/* Responsive */
+/* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+    .nav_left{display: none;}
+    .nav_right{display: none;}
+    .main,.sec2{
+        flex-direction: column-reverse;
+    }
+    .sec1,.sec4,.sec5{
+        flex-direction: column;
+    }
+    .main_right,.main_left,.sec1_left,.sec1_right,.sec2_left,.sec2_right,.sec_img,.sec5_left{
+        width: 100%;
+    }
+    .bold p,h2{
+        font-size:2em;
+    }
+    .big_normal p{
+        font-size:2em;
+    }
+    .small_normal p{
+        font-size:15px;
+        padding:20px;
+    }
+    .before_def{
+        height:2px;
+        width:20px;
+    }
+    .one_line_def p{
+        font-size:12px;
+    }
+    footer{
+        font-size:medium;
+    }
+} 
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .nav_left{display: none;}
+    .nav_right{display: none;}
+    .main,.sec2{
+        flex-direction: column-reverse;
+    }
+    .sec1,.sec4,.sec5{
+        flex-direction: column;
+    }
+    .main_right,.main_left,.sec1_left,.sec1_right,.sec2_left,.sec2_right,.sec_img,.sec5_left{
+        width: 100%;
+    }
+    .bold p,h2{
+        font-size:2em;
+    }
+    .big_normal p{
+        font-size:2em;
+    }
+    .small_normal p{
+        font-size:15px;
+        padding:20px;
+    }
+    .before_def{
+        height:2px;
+        width:20px;
+    }
+    .one_line_def p{
+        font-size:12px;
+    }
+    footer{
+        font-size:medium;
+    }
+} 
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .bold p,h2{
+        font-size:2em;
+    }
+    .big_normal p{
+        font-size:2em;
+    }
+    .small_normal p{
+        font-size:20px;
+    }
+} 
