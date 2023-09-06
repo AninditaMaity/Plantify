@@ -1,4 +1,4 @@
-# Website-2-Plantify-
+#Plantify
 <h1>Frontend Website Readme</h1>
 <h1><a href="https://aninditamaity.github.io/Website-2-Plantify-/">Visit Site</a></h1>
 <h2>Table of Contents</h2>
